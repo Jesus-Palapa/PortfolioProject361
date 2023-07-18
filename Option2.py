@@ -1,0 +1,13 @@
+def option2():
+    print("\t\t\tList of Pokemon Alphabetically")
+    print("-------------------------------------------------")
+    print("1. Abomasnow")
+    print("2. Abra")
+    print("3. Absol")
+    print("4. Accelgor")
+    print("5. Aegislash")
+    print("6. Aerodactyl")
+    print("7. Aggron")
+    print("8. Aipom")
+    print("9. Alakazam")
+    print("10. Alcremie")
