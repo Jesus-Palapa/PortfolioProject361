@@ -11,3 +11,6 @@ def option2():
     print("8. Aipom")
     print("9. Alakazam")
     print("10. Alcremie")
+
+    print("Show 10 more pokemon? [1] yes / [0] no")
+    print("Please enter your choice: 0")

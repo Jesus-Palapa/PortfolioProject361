@@ -1,28 +1,20 @@
 from Option1 import option1
 from Option2 import option2
-
-
-def option3():
-    print("")
-    print("Option 3 called")
-
-def option4():
-    print("")
-    print("Option 4 called")
-
+from Option3 import option3
+from Option4 import option4
 def menu():
     #main menu
     print("\t\t\t\t\t\t\tMain Menu")
     print("------------------------------------------------------------------------")
     print("[1] Pokemon Fact Sheet - search for Pokemon facts by name.")
-    print("[2] List of Pokemon - generate a list of Pokemon.")
-    print("[3] My Favorites - create and save a list of your favorite pokemon.")
-    print("[4] Random Pokemon Generator - a random Pokemon name will appear!\n\t\t\t\t*** Great for New Fans ***")
+    print("[2] List of Pokemon - generate a list of Pokemon (Intermediate).")
+    print("[3] My Favorites - create and save a list of your favorite pokemon (Intermediate).")
+    print("[4] Random Pokemon Generator - a random Pokemon name will appear!\n\t\t*** Great for New Fans or to be SURPRISED ***")
     print("[0] Exit")
 
 def poke_program():
-    print("Welcome to PokeFax! Use our menu to navigate the following options to gather your pokemon facts.\n")
-    print("To make a selection at any time, enter the number corresponding to your choice.")
+    print("Welcome to PokeFax! Use our menu to navigate the following options to gather your pokemon facts.")
+    print("To make a selection at any time, enter the number (#) corresponding to your [#] choice.\n")
     option = ""
     while option != 0:
         menu()
