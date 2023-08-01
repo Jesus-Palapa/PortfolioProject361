@@ -1,8 +1,8 @@
 ## PortfolioProject361
-PokeFax: A Pokemon Dictionary
-Name: Jesus Palapa
-Course: CS 361
-Email: palapacj@oregonstate.edu
+//PokeFax: A Pokemon Dictionary
+//Name: Jesus Palapa
+//Course: CS 361
+//Email: palapacj@oregonstate.edu
 
 **Description:** This program will allow new and old Pokemon fans to search their favorite pokemon by name and get pokemon data such as - type, number, name, weight, height, moves.
 The user can also see lists of pokemon and save their favorite pokemon.
@@ -21,7 +21,7 @@ A connection betweem the microservice and program will be established. The progr
 
 
 Using API PYPOKEDEX
-MIT License
+//MIT License
 
 Copyright (c) 2018-2023 Arnav Borborah
 
