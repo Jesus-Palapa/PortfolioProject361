@@ -11,7 +11,9 @@ The user can also see lists of pokemon and save their favorite pokemon.
 A connection betweem the microservice and program will be established. The program will send a pokemon name using sockets and the microservice will return pokemon data. For example, a user will use send() method to send a pokemon name "pikachu". The microservice will process the name and gather the pokemon's type, number, name, weight, height, moves.This information will be sent back to the program and be received using the recv() method.
 
 
+**UML Sequence Diagram**
 
+/Users/jesuspalapa/Downloads/UML Sequence Diagram.pdf
 
 
 
