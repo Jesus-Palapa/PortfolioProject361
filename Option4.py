@@ -9,7 +9,7 @@ def option4():
     print("\nGenerator Completed")
     print("--------------------")
     print("Pokemon Name:", poke_name)
-    print(f'Try entering {poke_name} in the [1] Pokemon Fact Sheet\n')
+    print(f'Try entering {poke_name} in the [1] Pokemon Fact Sheet.\n')
 
 # MIT License
 #

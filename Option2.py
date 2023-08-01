@@ -1,16 +1,17 @@
-def option2():
-    print("\t\t\tList of Pokemon Alphabetically")
-    print("-------------------------------------------------")
-    print("1. Abomasnow")
-    print("2. Abra")
-    print("3. Absol")
-    print("4. Accelgor")
-    print("5. Aegislash")
-    print("6. Aerodactyl")
-    print("7. Aggron")
-    print("8. Aipom")
-    print("9. Alakazam")
-    print("10. Alcremie")
+import pypokedex
 
-    print("Show 10 more pokemon? [1] yes / [0] no")
-    print("Please enter your choice: 0")
+def option2():
+    start = int(input("start: "))
+    while start <= 0:
+        start = int(input("Try Again: "))
+    end = int(input("end: "))
+    while end < start:
+        end = int(input("Try Again: "))
+    print("\t\t\tList of Pokemon Numerically")
+    counter = 0
+    for i in range(start, end+1):
+        counter += 1
+        print(pypokedex.get(dex=i).name, end="\t\t")
+        if counter % 10 == 0:
+            print("")
+    print("\n")

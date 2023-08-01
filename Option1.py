@@ -4,9 +4,9 @@ def option1():
     poke_name = str(input("Enter pokemon you want to search: "))
     try:
         pokemon = pypokedex.get(name = poke_name)
-        print("\nPokemon Fax Sheet")
+        print("\nPokeFax Sheet")
         print("-------------------------")
-        print("Pokedex: \t", pokemon.dex)
+        print("Number: \t", pokemon.dex)
         print("Name: \t\t", pokemon.name.upper())
         print("Type(s): ")
         for i in range(len(pokemon.types)):
