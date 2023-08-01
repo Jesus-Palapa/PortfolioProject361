@@ -17,6 +17,7 @@ A connection betweem the microservice and program will be established. The progr
 
 [UML Sequence Diagram.pdf](https://github.com/Jesus-Palapa/PortfolioProject361/files/12224798/UML.Sequence.Diagram.pdf)
 
+<img width="517" alt="Screenshot 2023-07-31 at 10 02 54 PM" src="https://github.com/Jesus-Palapa/PortfolioProject361/assets/114314987/21f33192-871e-4540-b030-805bda288124">
 
 
 
