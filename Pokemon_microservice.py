@@ -27,6 +27,9 @@ while True:
     # Receive message from client
     try:
         input_name = conn.recv(1024).decode()
+        if input_name == '0':
+            conn.send('0'.encode())
+            break
 
         if pypokedex.get(name=input_name):
             # Send message to the client
