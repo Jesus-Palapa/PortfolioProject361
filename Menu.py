@@ -20,7 +20,7 @@ def poke_program():
         menu()
         option = int(input("\nPlease enter your option: "))
         if option == 1:
-            print("\nAre you sure we want to continue to Pokemon Fact Sheet?\n[1] yes / [0] return")
+            print("\nAre you sure we want to continue to Pokemon Fact Sheet?\n[1] yes (Make sure to run microservice)/ [0] return")
             confirm_choice = int(input("Please enter your option: "))
             print("")
             if confirm_choice == 0:

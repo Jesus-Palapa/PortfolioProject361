@@ -1,16 +1,33 @@
 import pypokedex
+import socket
 
 def option1():
-    poke_name = str(input("Enter pokemon you want to search: "))
-    try:
-        pokemon = pypokedex.get(name = poke_name)
-        print("\nPokeFax Sheet")
-        print("-------------------------")
-        print("Number: \t", pokemon.dex)
-        print("Name: \t\t", pokemon.name.upper())
-        print("Type(s): ")
-        for i in range(len(pokemon.types)):
-            print("\t\t\t", pokemon.types[i].upper())
-        print("")
-    except:
-        print("\nError! Pokemon does not exist. Try checking your spelling.\n")
+    port = 1800
+    host = '127.0.0.1'
+    address = (host, port)
+
+    clientSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    clientSocket.connect(address)
+    while True:
+        poke_name = (input("Enter pokemon you want to search or enter 0 to exit: "))
+        poke_name = str(poke_name)
+        clientSocket.send(poke_name.encode())
+        verified_name = clientSocket.recv(1024).decode()
+        if verified_name == 'true':
+            print("\nPokeFax Sheet")
+            print("-------------------------")
+            print("Enter 1 to get pokemon number.")
+            print("Enter 2 to get pokemon type.")
+            print("Enter 3 to get pokemon weight.")
+            print("Enter 4 to get pokemon height.")
+            print("Enter 5 to get pokemon moves.")
+            data_choice = input("Enter your choice here: ")
+            clientSocket.send(data_choice.encode())
+            print(clientSocket.recv(1024).decode())
+        elif verified_name == '0':
+            break
+        else:
+            print("\nError! Pokemon does not exist. Try checking your spelling.\n")
+            break
+
+    clientSocket.close()
