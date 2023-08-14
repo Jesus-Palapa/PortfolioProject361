@@ -15,11 +15,7 @@ A connection betweem the microservice and program will be established. The progr
 To start program, run program on menu.py. Use the CLI to navigate between 4 options in any order. The option to enter name(option 1) will send the info to the microservice. To acces this option enter 1 and proceed to the subprogram. 
 
 
-[UML Sequence Diagram.pdf](https://github.com/Jesus-Palapa/PortfolioProject361/files/12224798/UML.Sequence.Diagram.pdf)
-
-<img width="517" alt="Screenshot 2023-07-31 at 10 02 54 PM" src="https://github.com/Jesus-Palapa/PortfolioProject361/assets/114314987/21f33192-871e-4540-b030-805bda288124">
-
-
+<img width="643" alt="Screenshot 2023-08-13 at 7 47 32 PM" src="https://github.com/Jesus-Palapa/PortfolioProject361/assets/114314987/457a4b18-2269-408d-8c76-96c496486233">
 
 
 
