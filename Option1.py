@@ -2,6 +2,7 @@ import pypokedex
 import socket
 
 def option1():
+    """Function sets up socket to send info to by connection. User will enter name and returns data"""
     port = 1800
     host = '127.0.0.1'
     address = (host, port)
@@ -9,7 +10,7 @@ def option1():
     clientSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     clientSocket.connect(address)
     while True:
-        poke_name = (input("Enter pokemon you want to search or enter 0 to exit: "))
+        poke_name = (input("Enter POKEMON NAME you want to search for or enter 0 to exit: "))
         poke_name = str(poke_name)
         clientSocket.send(poke_name.encode())
         verified_name = clientSocket.recv(1024).decode()
